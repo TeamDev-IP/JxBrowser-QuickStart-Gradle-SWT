@@ -59,7 +59,7 @@ Swt.configurePlatformDependency(project)
 
 application {
     // Define the main class for the application
-    mainClass.set("HelloSWT")
+    mainClass.set("com.teamdev.jxbrowser.quickstart.App")
 }
 
 tasks.withType<JavaExec> {
