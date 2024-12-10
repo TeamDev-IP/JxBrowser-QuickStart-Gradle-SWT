@@ -44,10 +44,12 @@ dependencies {
 
     // Adds dependency to the SWT UI toolkit integration.
     implementation(jxbrowser.swt)
-    implementation(Swt.toolkitDependency)
 
     // Adds dependency to the JxBrowser Kotlin DSL.
     implementation(jxbrowser.kotlin)
+
+    // Adds the platform-specific SWT dependencies.
+    implementation(Swt.toolkitDependency)
 }
 
 Swt.configurePlatformDependency(project)
