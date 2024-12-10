@@ -18,7 +18,7 @@
  *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.teamdev.jxbrowser.quickstart;
+package com.teamdev.jxbrowser.quickstart.gradle.swt;
 
 import com.teamdev.jxbrowser.dsl.Engine
 import com.teamdev.jxbrowser.dsl.JxBrowserLicense
@@ -35,9 +35,7 @@ import org.eclipse.swt.widgets.Shell
  */
 fun main() {
     // Initialize Chromium.
-    val engine = Engine(HARDWARE_ACCELERATED) {
-        license = JxBrowserLicense("your license key")
-    }
+    val engine = Engine(HARDWARE_ACCELERATED)
 
     // Create a Browser instance.
     val browser = engine.newBrowser()
