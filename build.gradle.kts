@@ -35,7 +35,7 @@ repositories {
 }
 
 jxbrowser {
-    version = "8.2.1"
+    version = "7.41.6"
 }
 
 dependencies {
@@ -44,9 +44,6 @@ dependencies {
 
     // Adds dependency to the SWT UI toolkit integration.
     implementation(jxbrowser.swt)
-
-    // Adds dependency to the JxBrowser Kotlin DSL.
-    implementation(jxbrowser.kotlin)
 
     // Adds the platform-specific SWT dependencies.
     implementation(Swt.toolkitDependency)

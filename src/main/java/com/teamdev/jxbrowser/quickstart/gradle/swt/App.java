@@ -22,6 +22,7 @@ package com.teamdev.jxbrowser.quickstart.gradle.swt;
 
 import static com.teamdev.jxbrowser.engine.RenderingMode.HARDWARE_ACCELERATED;
 
+import com.teamdev.jxbrowser.browser.Browser;
 import com.teamdev.jxbrowser.engine.Engine;
 import com.teamdev.jxbrowser.view.swt.BrowserView;
 import org.eclipse.swt.layout.FillLayout;
@@ -37,21 +38,21 @@ public final class App {
 
     public static void main(String[] args) {
         // Initialize Chromium.
-        var engine = Engine.newInstance(HARDWARE_ACCELERATED);
+        Engine engine = Engine.newInstance(HARDWARE_ACCELERATED);
 
         // Create a Browser instance.
-        var browser = engine.newBrowser();
+        Browser browser = engine.newBrowser();
 
         // Load the required web page.
         browser.navigation().loadUrl("https://html5test.teamdev.com");
 
-        var display = new Display();
-        var shell = new Shell(display);
+        Display display = new Display();
+        Shell shell = new Shell(display);
         shell.setText("JxBrowser SWT");
         shell.setLayout(new FillLayout());
 
         // Create and embed SWT BrowserView widget to display web content.
-        var view = BrowserView.newInstance(shell, browser);
+        BrowserView view = BrowserView.newInstance(shell, browser);
         view.setSize(1280, 800);
 
         shell.pack();

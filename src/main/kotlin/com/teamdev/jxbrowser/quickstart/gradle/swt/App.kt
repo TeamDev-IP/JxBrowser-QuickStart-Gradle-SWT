@@ -20,8 +20,7 @@
 
 package com.teamdev.jxbrowser.quickstart.gradle.swt;
 
-import com.teamdev.jxbrowser.dsl.Engine
-import com.teamdev.jxbrowser.dsl.JxBrowserLicense
+import com.teamdev.jxbrowser.engine.Engine
 import com.teamdev.jxbrowser.engine.RenderingMode.HARDWARE_ACCELERATED
 import com.teamdev.jxbrowser.view.swt.BrowserView
 import org.eclipse.swt.layout.FillLayout
@@ -35,7 +34,7 @@ import org.eclipse.swt.widgets.Shell
  */
 fun main() {
     // Initialize Chromium.
-    val engine = Engine(HARDWARE_ACCELERATED)
+    val engine = Engine.newInstance(HARDWARE_ACCELERATED)
 
     // Create a Browser instance.
     val browser = engine.newBrowser()
