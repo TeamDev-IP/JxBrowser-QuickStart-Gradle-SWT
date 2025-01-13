@@ -1,5 +1,5 @@
 /*
- *  Copyright 2024, TeamDev. All rights reserved.
+ *  Copyright 2025, TeamDev. All rights reserved.
  *
  *  Redistribution and use in source and/or binary forms, with or without
  *  modification, must retain the above copyright notice and the following
@@ -21,7 +21,6 @@
 package com.teamdev.jxbrowser.quickstart.gradle.swt;
 
 import com.teamdev.jxbrowser.dsl.Engine
-import com.teamdev.jxbrowser.dsl.JxBrowserLicense
 import com.teamdev.jxbrowser.engine.RenderingMode.HARDWARE_ACCELERATED
 import com.teamdev.jxbrowser.view.swt.BrowserView
 import org.eclipse.swt.layout.FillLayout
