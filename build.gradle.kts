@@ -51,7 +51,7 @@ kotlin {
 }
 
 jxbrowser {
-    version = "8.18.1"
+    version = "8.18.2"
 }
 
 dependencies {
